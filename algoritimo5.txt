@@ -1,0 +1,34 @@
+Algoritmo BuscaElemento
+
+Var
+   lista: vetor[1..10] de inteiro
+   elemento, posicao: inteiro
+   encontrado: logico
+
+Inicio
+   Para i de 1 ate 10 faca
+      escreva("Digite o ", i, "o número: ")
+      leia(lista[i])
+   FimPara
+   
+   escreva("Digite o elemento a ser buscado: ")
+   leia(elemento)
+   
+   encontrado <- falso
+   posicao <- 0
+   
+   Para i de 1 ate 10 faca
+      Se lista[i] = elemento entao
+         encontrado <- verdadeiro
+         posicao <- i
+         Interrompa
+      FimSe
+   FimPara
+   
+   Se encontrado entao
+      escreva("O elemento ", elemento, " foi encontrado na posição ", posicao)
+   Senao
+      escreva("O elemento ", elemento, " não foi encontrado na lista.")
+   FimSe
+   
+Fim
