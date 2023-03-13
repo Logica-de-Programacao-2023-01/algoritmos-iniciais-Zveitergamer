@@ -1,0 +1,17 @@
+Algoritmo CalcularFatorial
+
+Var
+   numero, fatorial: inteiro
+
+Inicio
+   escreva("Digite um número inteiro positivo: ")
+   leia(numero)
+   
+   fatorial <- 1
+   Para i de 1 ate numero faca
+      fatorial <- fatorial * i
+   FimPara
+   
+   escreva("O fatorial de ", numero, " é: ", fatorial)
+   
+Fim
