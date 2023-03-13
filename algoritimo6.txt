@@ -1,0 +1,19 @@
+Algoritmo CalcularPotencia
+
+Var
+   base, potencia, resultado: inteiro
+
+Inicio
+   escreva("Digite a base: ")
+   leia(base)
+   escreva("Digite a potência: ")
+   leia(potencia)
+   
+   resultado <- 1
+   Para i de 1 ate potencia faca
+      resultado <- resultado * base
+   FimPara
+   
+   escreva(base, " elevado a ", potencia, " é igual a ", resultado)
+   
+Fim
