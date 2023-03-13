@@ -1,0 +1,15 @@
+leia valor_inserido
+leia unidade
+
+Se unidade = celcius
+faça;
+1- (valor_inserido * 9/5) + 32 = resultado_farenheight
+2- escrever resultado_celcius
+
+se unidade = farenheight
+faça; 
+1- (valor_inserido - 32) / (9/5) = resultado_celcius
+2- escrever resultado_celcius
+
+fim
+  
