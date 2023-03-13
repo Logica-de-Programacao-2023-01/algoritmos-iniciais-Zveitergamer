@@ -1,0 +1,25 @@
+Algoritmo VerificarPrimo
+
+Var
+   numero, divisor: inteiro
+   primo: logico
+
+Inicio
+   escreva("Digite um número: ")
+   leia(numero)
+   
+   primo <- verdadeiro
+   Para divisor de 2 ate numero-1 faca
+      Se numero % divisor = 0 entao
+         primo <- falso
+         Interrompa
+      FimSe
+   FimPara
+   
+   Se primo entao
+      escreva(numero, " é um número primo.")
+   Senao
+      escreva(numero, " não é um número primo.")
+   FimSe
+   
+Fim
