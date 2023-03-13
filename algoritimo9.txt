@@ -1,0 +1,18 @@
+Algoritmo CalcularMontanteJurosCompostos
+
+Var
+   capital, taxa, tempo, montante: real
+
+Inicio
+   escreva("Digite o capital inicial: ")
+   leia(capital)
+   escreva("Digite a taxa de juros (em decimal): ")
+   leia(taxa)
+   escreva("Digite o tempo (em anos): ")
+   leia(tempo)
+   
+   montante <- capital * (1 + taxa) ^ tempo
+   
+   escreva("O montante após ", tempo, " anos é: R$ ", montante)
+   
+Fim
