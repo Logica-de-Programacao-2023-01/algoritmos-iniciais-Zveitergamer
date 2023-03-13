@@ -1,0 +1,28 @@
+Algoritmo CalcularMediaPonderada
+
+Var
+   notas: vetor[1..10] de real
+   pesos: vetor[1..10] de inteiro
+   totalNotas, totalPesos: inteiro
+   mediaPonderada: real
+
+Inicio
+   totalNotas <- 0
+   totalPesos <- 0
+   
+   para i de 1 ate 10 faca
+      escreva("Digite a nota ", i, ": ")
+      leia(notas[i])
+      
+      escreva("Digite o peso da nota ", i, ": ")
+      leia(pesos[i])
+      
+      totalNotas <- totalNotas + (notas[i] * pesos[i])
+      totalPesos <- totalPesos + pesos[i]
+   fimPara
+   
+   mediaPonderada <- totalNotas / totalPesos
+   
+   escreva("A média ponderada é: ", mediaPonderada)
+   
+Fim
